@@ -1,0 +1,19 @@
+// Breakpoints
+$bp-xs: 320px;
+$bp-xs-max: 424px;
+$bp-sm: 425px;
+$bp-sm-max: 767px;
+$bp-md: 768px;
+$bp-md-max: 1023px;
+$bp-lg: 1024px;
+$bp-lg-max: 1279px;
+$bp-xl: 1280px;
+$bp-xl-max: 1400px;
+
+
+// Gutters
+$gutter-xs: 20px;
+$gutter-sm: $gutter-xs;
+$gutter-md: 40px;
+$gutter-lg: $gutter-md;
+$gutter-xl: $gutter-md;
