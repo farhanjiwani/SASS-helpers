@@ -13,7 +13,7 @@ My goto SASS helpers when I am starting a project.
     1. [`sr-only`](https://github.com/farhanjiwani/SASS-helpers#sr-only)
 1. [Animation](https://github.com/farhanjiwani/SASS-helpers#animation)
     1. [Easing](https://github.com/farhanjiwani/SASS-helpers#easing)
-
+    1. [Keyframe Animation Template](https://github.com/farhanjiwani/SASS-helpers#keyframe-animation-template)
 
 ## Normalize
 * [normalize.css](https://github.com/farhanjiwani/SASS-helpers/blob/master/normalize.css)
@@ -69,7 +69,7 @@ My goto SASS helpers when I am starting a project.
 $defaultEasing: 0.3s ease-in-out 0s;
 ```
 
-#### Keyframe Animation Template
+### Keyframe Animation Template
 ```sass
 .my-animation-class {
     // shorthand:
