@@ -5,10 +5,12 @@ My goto SASS helpers when I am starting a project.
 
 ## Table of Contents
 1. [Normalize](https://github.com/farhanjiwani/SASS-helpers#normalize)
-    1. [Initializations](https://github.com/farhanjiwani/SASS-helpers#initializations)
+    1. [Custom Resets](https://github.com/farhanjiwani/SASS-helpers#custom-resets)
 1. [Initial Measurements](https://github.com/farhanjiwani/SASS-helpers#initial-measurements)
     1. [Breakpoints](https://github.com/farhanjiwani/SASS-helpers#breakpoints)
     1. [Gutters](https://github.com/farhanjiwani/SASS-helpers#gutters)
+1. [Fonts](https://github.com/farhanjiwani/SASS-helpers#fonts)
+    1. [Custom `font-family` mixin](https://github.com/farhanjiwani/SASS-helpers#custom-font-family-mixin)
 1. [Accessibility](https://github.com/farhanjiwani/SASS-helpers#accessibility)
     1. [`sr-only`](https://github.com/farhanjiwani/SASS-helpers#sr-only)
 1. [Animation](https://github.com/farhanjiwani/SASS-helpers#animation)
@@ -22,7 +24,7 @@ My goto SASS helpers when I am starting a project.
     * `box-sizing` is *not* set to `border-box` for all elements by default.
     * Base font size not set
 
-### Initializations
+### Custom Resets
 * [_initializations.scss](https://github.com/farhanjiwani/SASS-helpers/blob/master/_initializations.scss)
 * My additional defaults after normalization
 
@@ -33,6 +35,8 @@ My goto SASS helpers when I am starting a project.
 #### Font Initializations
 * base `font-size` set to `10px` for simple rem calculations
 * default `font-size` set to `1.6rem` (`16px`)
+* global `-webkit-font-smoothing` set to `antialiased;`
+* headings `h1` to `h6` get initial `font-size` and `margin` rules
 
 
 ## Initial Measurements
@@ -43,6 +47,11 @@ My goto SASS helpers when I am starting a project.
 
 ### Gutters
 * [Initial gutters](https://github.com/farhanjiwani/SASS-helpers/blob/master/_variables.scss#L14-L19)
+
+
+## Fonts
+* Custom `font-family` mixin: [@fntDefault](https://github.com/farhanjiwani/SASS-helpers/blob/master/_mixins.scss#L1-L19)
+
 
 ## Accessibility
 
@@ -70,6 +79,8 @@ $defaultEasing: 0.3s ease-in-out 0s;
 ```
 
 ### Keyframe Animation Template
+
+#### Example 1 - From-To
 ```sass
 .my-animation-class {
     // shorthand:
@@ -83,7 +94,7 @@ $defaultEasing: 0.3s ease-in-out 0s;
     } 
     
     to { 
-        opacity: 2;
+        opacity: 0;
     }  
 }
 ```
