@@ -1,0 +1,19 @@
+/**
+ * Example font selector mixin.
+ *   $weight: default is "normal"
+ *       Add additional conditions as needed
+ */
+@mixin fntDefault($weight: "") {
+	@if ($weight == "" or $weight == "normal") {
+		$weight: 400;
+	}
+	@else if ($weight == "bold") {
+		$weight: 800;
+	}
+	@else if ($weight == "lite") {
+		$weight: 200;
+	}
+
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: $weight;
+}
